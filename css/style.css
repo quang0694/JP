@@ -579,3 +579,54 @@ App download section
     margin: 0 0 30px;
     line-height: 26px;
 }
+/* ------------------
+how it works section
+--------------------- */
+.how-it-works-item{
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.how-it-works-item.line-right::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 50%;
+    top: 60px;
+    background-color: var(--margin-color);
+    z-index: -1;
+}
+.how-it-works-item .step{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: var(--margin-color);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: 500;
+}
+.how-it-works-item h3{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black-900);
+    text-transform: capitalize;
+}
+.how-it-works-item p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    color: var(--black-400);
+    line-height: 26px;
+}
+/* ------------------
+Testimonials Section 
+-------------------- */
+.testimonials{
+    background-color: var(--black-100);
+    
+}
