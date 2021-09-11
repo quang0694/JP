@@ -15,39 +15,42 @@
     <title>Document</title>
   </head>
   <body>
-    
+    <!-- preloader  Star-->
+    <div class="preloader">
+      <span></span>
+    </div>
+    <!-- preloader  End -->
     
     
     
 <!-- navbar star -->
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <div class="navbar-header">
+      <!-- < class="navbar-header"> -->
           <a href="index.html" class="navbar-brand">Quang App</a>
-        
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="collapsemyNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fas fa-bars"></i>
           </button>
-      </div>
-      <div class="collapse navbar-collapse" id="collapsemyNavbar">
+      
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">features</a>
+                <a class="nav-link" data-scroll-nav="1" href="#">features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">screenshots</a>
+                <a class="nav-link" data-scroll-nav="2" href="#">screenshots</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">testimonials</a>
+                <a class="nav-link" data-scroll-nav="4" href="#">testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">pricing</a>
+                <a class="nav-link" data-scroll-nav="5" href="#">pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" data-scroll-nav="6" href="#">contact</a>
               </li>
         </ul>
       </div>
@@ -56,7 +59,7 @@
 <!-- navbar end -->
 
 <!-- home secctions start -->
-<section class="home d-flex align-items-center">
+<section class="home d-flex align-items-center" id="home" data-scroll-index="0">
   <div class="effect-wrap">
     <i class="fas fa-plus effect effect-1"></i>
     <i class="fas fa-plus effect effect-2"></i>
@@ -64,19 +67,19 @@
   </div>
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-7 col-md-7">
+      <div class="col-md-7">
         <div class="home-text">
           <h1>Mẫu ứng dụng di động tốt nhất cho doanh nghiệp của bạn</h1>
           <p>” Em có sai với ai đi nữa, có làm cái gì đi nữa. Nếu có phải trả giá thì em cũng xin chấp nhận trả giá. Ra xã hội làm ăn bươn chải, liều thì ăn nhiều, không liều thì ăn ít. Muốn thành công thì phải chấp nhận trải qua đắng cay ngọt bùi. Làm ăn muốn kiếm được tiền thì phải chấp nhận mạo hiểm, nguy hiểm một tí nhưng trong tầm kiểm soát. Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn. Những cái loại không làm mà đòi có ăn thì ăn đầu bu*i nhá, ăn cứk. Thế cho nó dễ!</p>
           <div class="home-btn">
-            <a href="#" class="btn btn-1">download app</a>
+            <a href="#" data-scroll-goto="3" class="btn btn-1">download app</a>
             <button type="button" class="btn btn-1 video-play-btn">
               <i class="fas fa-play"></i>
             </button>
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-md-5 text-center">
+      <div class="col-md-5 text-center">
         <div class="home-img">
           <div class="circle"></div>
           <img src="./img/app-screenshots/1.png" alt="Quang app">
@@ -88,7 +91,7 @@
 <!-- home secctions end -->
 
 <!-- Features section star -->
-<section class="features section-padding">
+<section class="features section-padding" id="features" data-scroll-index="1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-1g-8">
@@ -177,7 +180,7 @@
 
 
 <!-- App screenshots Section start  -->
-<section class="app-screenshots section-padding">
+<section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -211,7 +214,7 @@
 
 
 <!-- App download section start -->
-<section class="app-download section-padding">
+<section class="app-download section-padding" data-scroll-index="3">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -300,7 +303,7 @@
 <!-- how It Works Section end -->
 
 <!-- Testtimonials section start -->
-<section class="testimonials section-padding">
+<section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -310,31 +313,407 @@
       </div>
     </div>
     <div class="row">
-      <div class="testimonials-carousel">
+      <div class="owl-carousel testimonials-carousel">
         <div class="testimonial-item">
           <div class="img-box">
             <img src="/img/testimonial/1.jpg" alt="testimonial">
             <i class="fas fa-quote-right"></i>
           </div>
-          <p></p>
-          <h3></h3>
-          <span></span>
+          <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+          <h3>Duy Quang </h3>
+          <span>UI designer</span>
           <div class="rating">
-
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="img-box">
+            <img src="/img/testimonial/2.jpg" alt="testimonial">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+          <h3>Duy Quang </h3>
+          <span>UI designer</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="img-box">
+            <img src="/img/testimonial/3.jpg" alt="testimonial">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+          <h3>Duy Quang </h3>
+          <span>UI designer</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="img-box">
+            <img src="/img/testimonial/4.jpg" alt="testimonial">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+          <h3>Duy Quang </h3>
+          <span>UI designer</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- Testtimonials section end -->
 
+<!-- pricing section start -->
+<section class="pricing section-padding" id="pricing" data-scroll-index="5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>pricing <span>Plan</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-plan">
+            <div class="pricing-header">
+          <h3>basic</h3>
+        </div>
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="price">99</span>
+          <span class="period">/monthly</span>
+        </div>
+        <div class="pricing-body">
+          <ul>
+            <li><i class="fas fa-check"></i>5 GB Bandwidth</li>
+            <li><i class="fas fa-check"></i> Free Update</li>
+            <li><i class="fas fa-check"></i>High Regulation Printing</li>
+            <li><i class="fas fa-check"></i>Branding</li>
+            <li><i class="fas fa-check"></i>Another Great Features</li>
+          </ul>
+        </div>
+        <div class="pricing-footer">
+          <a href="#" class="btn btn-2">get started</a>
+        </div>
+      </div>
+        </div>
+        
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-plan">
+            <div class="pricing-header">
+          <h3>premium</h3>
+        </div>
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="price">149</span>
+          <span class="period">/monthly</span>
+        </div>
+        <div class="pricing-body">
+          <ul>
+            <li><i class="fas fa-check"></i>5 GB Bandwidth</li>
+            <li><i class="fas fa-check"></i> Free Update</li>
+            <li><i class="fas fa-check"></i>High Regulation Printing</li>
+            <li><i class="fas fa-check"></i>Branding</li>
+            <li><i class="fas fa-check"></i>Another Great Features</li>
+          </ul>
+        </div>
+        <div class="pricing-footer">
+          <a href="#" class="btn btn-2">get started</a>
+        </div>
+      </div>
+        </div>
+        
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-plan">
+            <div class="pricing-header">
+          <h3>ultimate</h3>
+        </div>
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="price">199</span>
+          <span class="period">/monthly</span>
+        </div>
+        <div class="pricing-body">
+          <ul>
+            <li><i class="fas fa-check"></i>5 GB Bandwidth</li>
+            <li><i class="fas fa-check"></i> Free Update</li>
+            <li><i class="fas fa-check"></i>High Regulation Printing</li>
+            <li><i class="fas fa-check"></i>Branding</li>
+            <li><i class="fas fa-check"></i>Another Great Features</li>
+          </ul>
+        </div>
+        <div class="pricing-footer">
+          <a href="#" class="btn btn-2">get started</a>
+        </div>
+      </div>
+        </div>
+        
+    </div>
+  </div>
+</section>
 
+<!-- pricing section end -->
+<!-- team section start -->
+<section class="team section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>Team <span>member</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="owl-carousel team-carousel">
+        <div class="team-item">
+          <img src="img/team/1.jpg" alt="team">
+          <h3>Sarita</h3>
+          <span>UI designer</span>
+        </div>
+        <div class="team-item">
+          <img src="img/team/2.jpg" alt="team">
+          <h3>Neha</h3>
+          <span>UI designer</span>
+        </div>
+        <div class="team-item">
+          <img src="img/team/3.jpg" alt="team">
+          <h3>Killer</h3>
+          <span>UI designer</span>
+        </div>
+        <div class="team-item">
+          <img src="img/team/4.jpg" alt="team">
+          <h3>Dane</h3>
+          <span>UI designer</span>
+        </div>
+        <div class="team-item">
+          <img src="img/team/5.jpg" alt="team">
+          <h3>Marry</h3>
+          <span>UI designer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- team section end -->
 
-
-<!-- Testtimonials section start -->
-
-
-
+<!-- Faq section start -->
+<section class="faq section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>Frequently <span>asked</span> queries</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div id="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
+                <h3>100% fluid responsive - fits any device perfectly</h3>
+              </div>
+              <div class="collapse show" id="collapse-01" data-parent="#accordion">
+                <div class="accordion-body">
+                  <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn,Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
+                <h3>Clean code</h3>
+              </div>
+              <div class="collapse" id="collapse-02" data-parent="#accordion">
+                <div class="accordion-body">
+                  <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn,Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
+                <h3>Flat, modern and clean design </h3>
+              </div>
+              <div class="collapse" id="collapse-03" data-parent="#accordion">
+                <div class="accordion-body">
+                  <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn,Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
+                <h3>Custom Font Support</h3>
+              </div>
+              <div class="collapse" id="collapse-04" data-parent="#accordion">
+                <div class="accordion-body">
+                  <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn,Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Faq section end -->
+<!-- contact section start -->
+<section class="contact section-padding" data-scroll-index="6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>Get in <span>Touch</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5">
+          <div class="contact-info">
+            <h3>For Any Queries and Support</h3>
+            <div class="contact-info-item">
+              <i class="fas fa-location-arrow"></i>
+              <h4>Company Location</h4>
+              <p>12-1 nagara , Japan</p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <h4>Write to us at</h4>
+              <p>quang@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <h4>Call us on</h4>
+              <p>0909000000 **</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="contact-form">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Your Name" class="form-control">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Your Email" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" placeholder="Your Phone" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" placeholder="Subject" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <button type="submit" class="btn btn-2">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- contact section End -->
+<!-- Footer start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>About Us</h3>
+          <p>Xã hội này, chỉ có làm, chịu khó cần cù thì bù siêng năng. Chỉ có làm thì mới có ăn.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">latest Blogs</a></li>
+            <li><a href="#">App Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#features">features</a></li>
+            <li><a href="#screenshots">screenshots</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#testimonials">testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Social Pages</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">instargram</a></li>
+            <li><a href="#">linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="copyright-text">&copy;2021 @The Duy quang</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer end -->
+ <!-- toggle theme start  - Light and dark mode-->
+ <div class="toggle-theme">
+  <i class="fas"></i>
+ </div>
+ <!-- toggle theme end  -->
 
 
 <!-- Video Popup start -->
@@ -342,7 +721,7 @@
   <div class="video-popup-inner">
     <i class="fas fa-times video-popup-close"></i>
     <div class="iframe-box">
-      <iframe id="player-1" src="https://www.youtube.com/embed/upN1fv7T1Qs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="player-1" src="https://www.youtube.com/embed/dJMODzBIAOo"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>
@@ -362,6 +741,8 @@
 <script src="./js/bootstrap.min.js"></script>
 <!-- owl carousel js  -->
 <script src="./js/owl.carousel.min.js"></script>
+<!-- ScrollIT js  -->
+<script src="./js/scrollIt.min.js"></script>
 <!-- main js -->
 <script src="./js/main.js"></script>    
 </body>
